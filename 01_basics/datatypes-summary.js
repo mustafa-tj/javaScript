@@ -31,3 +31,30 @@ const myFunction = function(){
 }
 
 console.log(typeof anotherId);
+
+
+// ---------------Memories in JS------------------
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+// example of stack memory
+let myName = "Mustafa"
+
+let anotherName = myName
+anotherName = "mustu"
+
+console.log(myName);
+console.log(anotherName);
+
+// example of heap memory
+let userOne = {
+    person: "Mustafa",
+    email: "mustafa@google.com"
+}
+
+let userTwo = userOne
+
+userTwo.email = "tj@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
